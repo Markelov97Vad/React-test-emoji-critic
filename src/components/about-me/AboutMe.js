@@ -1,11 +1,11 @@
 import React from 'react';
-import {Link, Outlet} from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import './AboutMe.css';
 
 function AboutMe () {
   return (
     <div className="about-me">
-      <ul className='links'>
+      <ul className="links">
         <li>
           <Link to={`my-story`}>Моя история</Link>
         </li>
@@ -16,7 +16,7 @@ function AboutMe () {
           <Link to={`contact`}>Контактная информация</Link>
         </li>
       </ul>
-      <Outlet />
+      <Outlet/>
     </div>
   )
 }
