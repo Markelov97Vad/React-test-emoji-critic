@@ -1,19 +1,22 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Dashboard from './Dashboard';
-import Header from './Header';
-import AboutMe from './AboutMe';
-import Reviews from './Reviews' ;
 import './App.css';
+import Dashboard from './Dashboard';
+import Reviews from "./Reviews";
+import AboutMe from "./AboutMe";
+import Header from './Header';
+import AboutUs from './AboutUs'
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='App'>
-      < Header />
-      < Routes >
-        <Route path='/' element={<Dashboard />} />
-        <Route path='/reviews' element={<Reviews />} />
-        <Route path='/about-me' element={<AboutMe /> } />
+    <div className="App">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path='/about-us' element={<AboutUs />} />
       </Routes>
     </div>
   );
